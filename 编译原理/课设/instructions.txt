@@ -1,0 +1,7 @@
+以下指令是 Windows 系统的：
+
+以 cifa.l 和 yufa.y 为例：
+flex cifa.l： 编译 cifa.l，生成 lex.yy.c
+bison -d yufa.y： 编译 yufa.y，生成 yufa.tab.c 和 yufa.tab.h
+gcc lex.yy.c yufa.tab.c：编译 lex.yy.c 文件和 yufa.tab.c 文件，生成 a.exe
+点击 a.exe，运行程序。
